@@ -1,0 +1,30 @@
+.interface {
+    position: relative;
+    width: 845px;
+    height: 522px;
+    background-color: #6291B3;
+    border-radius: 10px;
+}
+
+.header {
+    font-family: 'Genos';
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: rgba(76, 84, 113, 1);
+}
+
+h2 {
+    position: absolute;
+    top: 63px;
+    left: 276px;
+    font-family: 'Genos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+}

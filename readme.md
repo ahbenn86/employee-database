@@ -13,3 +13,4 @@
 
 * React (JSX)
 * <a href="https://randomuser.me/">Random User Generator API</a>
+* Figma

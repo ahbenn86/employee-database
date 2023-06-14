@@ -1,0 +1,22 @@
+.search-bar {
+    position: absolute;
+    width: 238px;
+    height: 36px;
+    left: 592px;
+    top: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 3px 2px 5px rgba(0, 0, 0, 0.25);
+    font-family: 'Genos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.search-bar::placeholder {
+    color: rgba(117, 117, 117, 0.5)
+}
+

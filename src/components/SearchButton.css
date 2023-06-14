@@ -1,0 +1,23 @@
+.search-btn {
+  position: absolute;
+  width: 145px;
+  height: 36px;
+  left: 350px;
+  top: 458px;
+  background-color: #9ca6ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  color: white;
+  border: none;
+  font-family: 'Genos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
