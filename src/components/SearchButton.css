@@ -9,15 +9,20 @@
   border-radius: 7px;
   color: white;
   border: none;
-  font-family: 'Genos';
+  font-family: "Genos";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
+  transition: 0.1s all;
 }
 
 .search-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.search-btn:active {
+  transform: scale(0.98);
 }
