@@ -1,32 +1,31 @@
 import React, { useState, useEffect } from "react";
+import Display from "./Display";
 import "./SearchBar.css";
 
-//Stores the api data and search field values in state converting any input to lower case. 
+//Stores the api data and search field values in state converting any string to lower case.
 const SearchBar = () => {
-  const [profiles, setProfiles] = useState([]);
+  const [profiles, setProfiles] = useState();
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
-      .then((users) => {
-        setProfiles(users);
+      .then((data) => {
+        setProfiles(data);
       });
   }, []);
 
-  const filteredProfiles = profiles.filter((user) =>
-    user.name.toLowerCase().includes(search)
-  );
-
   return (
-    <input
-      placeholder="employee search"
-      className="search-bar"
-      type="search"
-      onChange={(event) => setSearch(event.target.value.toLowerCase())}
-    >
-      {console.log(search)}
-    </input>
+    <>
+      <input
+        placeholder="employee search"
+        className="search-bar"
+        type="search"
+        onChange={(event) => setSearch(event.target.value.toLowerCase())}
+      >
+      </input>
+      <Display profiles={profiles} search={search}/>
+    </>
   );
 };
 
